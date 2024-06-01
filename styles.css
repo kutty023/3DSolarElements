@@ -1,0 +1,64 @@
+body { 
+  background: url('https://bsmedia.business-standard.com/_media/bs/img/article/2016-10/14/full/1476415248-0256.jpg?im=FeatureCrop,size=(826,465)'); 
+  color: white;
+  overflow: hidden;
+}
+
+#elementName,#heading{
+  text-align: center;
+}
+
+#element-btn{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+#element-btn button{
+  width: 7em;
+  height: 35px;
+  background-color: greenyellow;
+  margin: 10px;
+  padding: 10px;
+}
+
+#element-btn button:hover{
+  cursor: pointer;
+}
+
+#solar {
+  width: 100px;
+  height: 100px;
+  background-image: url('https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcTQqoB4xBnIkmUg5pxDyYW2h0Q1pRTsbQBOfhg-E-y4iLFicsyi');
+  box-shadow: inset 16px 0 40px 3px rgba(0,0,0,0.9),
+    inset -3px 0 5px 2px rgba(255,255,255,0.16);
+  background-size: 190px;
+  margin: 80px auto;
+  border-radius: 50%;
+  position: relative;
+  animation-name: move,scale,rotate;
+  animation-duration: 4s,4s,4s;
+  animation-iteration-count: infinite,infinite,infinite;
+  animation-timing-function: ease-in-out,linear,linear;
+}
+
+@keyframes move {
+  0%   { left: 200px;  }  
+  70%  { left: -200px; }
+  100% { left: 200px;  }
+}
+
+@keyframes scale {
+  0%  { transform: scale(1);   }
+  32% { transform: scale(0.4); animation-timing-function:  ease-in; }
+  70% { transform: scale(1); animation-timing-function:  ease-in;  }
+  75% { transform: scale(1.2);  animation-timing-function:  ease-in-out; }
+  86% { transform: scale(2);  }  
+  98% { transform: scale(1.2); }
+  100%{ transform: scale(1); }
+}
+ 
+@keyframes rotate {
+  0% { background-position: 0px; }
+  100% { background-position: 190px; }
+}
