@@ -1,5 +1,5 @@
 function changeElement(element) {
-    var elementDiv = document.getElementById('solar');
+    var elementDiv = document.getElementById('solarElement');
     var elementName = document.getElementById('elementName');
   
   switch(element) {
