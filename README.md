@@ -1,3 +1,3 @@
 # 3DSolarElemnts
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/kutty023/3DSolarElemnts)
+[Output!!](https://kutty023.github.io/3DSolarElements/)
